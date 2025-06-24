@@ -1,0 +1,1 @@
+using Application.DTOs; using FluentValidation; namespace Application.Validators { public class UserValidator : AbstractValidator<UserDto> { public UserValidator() { RuleFor(x => x.Username).NotEmpty().MaximumLength(50); RuleFor(x => x.FullName).NotEmpty(); RuleFor(x => x.BuildingNumber).NotEmpty(); RuleFor(x => x.ApartmentNumber).NotEmpty(); } } }

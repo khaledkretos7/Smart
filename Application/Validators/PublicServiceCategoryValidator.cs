@@ -1,0 +1,1 @@
+using Application.DTOs; using FluentValidation; namespace Application.Validators { public class PublicServiceCategoryValidator : AbstractValidator<PublicServiceCategoryDto> { public PublicServiceCategoryValidator() { RuleFor(x => x.Name).NotEmpty().MaximumLength(100); RuleFor(x => x.Description).NotEmpty(); } } }

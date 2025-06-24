@@ -1,0 +1,1 @@
+using Application.DTOs; using FluentValidation; namespace Application.Validators { public class MessageValidator : AbstractValidator<MessageDto> { public MessageValidator() { RuleFor(x => x.Content).NotEmpty(); RuleFor(x => x.SenderId).GreaterThan(0); RuleFor(x => x.RecipientId).GreaterThan(0); } } }

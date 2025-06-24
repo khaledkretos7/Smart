@@ -1,0 +1,1 @@
+using Application.DTOs; using FluentValidation; namespace Application.Validators { public class PostValidator : AbstractValidator<PostDto> { public PostValidator() { RuleFor(x => x.Content).NotEmpty(); RuleFor(x => x.UserId).GreaterThan(0); } } }

@@ -1,0 +1,1 @@
+namespace Application.DTOs { public class AdvertisementDto { public string Title { get; set; } public string Content { get; set; } public int UserId { get; set; } public float? Price { get; set; } public string PhoneNumber { get; set; } public string Images { get; set; } } }

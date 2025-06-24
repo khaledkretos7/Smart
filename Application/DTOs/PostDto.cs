@@ -1,0 +1,1 @@
+namespace Application.DTOs { public class PostDto { public string Content { get; set; } public int UserId { get; set; } public bool IsDeleted { get; set; } public string DeletionType { get; set; } } }
